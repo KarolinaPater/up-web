@@ -1,0 +1,39 @@
+.footer-wrapper {
+  width: 100%;
+  background-color: #454c5a;
+}
+
+.footer {
+  max-width: 1200px;
+  color: white;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.footer-column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer-link:hover {
+  // opacity: 50%;
+  color: #61dafb;
+}
+
+.logo-footer {
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.logo-footer-img {
+  width: 100%;
+}
