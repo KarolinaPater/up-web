@@ -1,5 +1,5 @@
 import "../style/footer.scss";
-import logoup from "../images/logoup.png";
+import logoup from "../images/logoup2.png";
 
 function Footer() {
   return (
