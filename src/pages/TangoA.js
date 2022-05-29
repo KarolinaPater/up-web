@@ -1,7 +1,7 @@
-function Team() {
+function TangoA() {
   return (
     <div className="page">
-      <h1>Zepsuł</h1>
+      <h1>TangoA</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet
         faucibus urna, eget suscipit leo. Nulla porta mattis neque, sed posuere
@@ -69,4 +69,4 @@ function Team() {
   );
 }
 
-export default Team;
+export default TangoA;

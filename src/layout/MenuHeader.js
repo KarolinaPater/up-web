@@ -1,5 +1,5 @@
 import "../style/menu-header.scss";
-import MenuButton from "../components/menu/MenuButton.js";
+//import MenuButton from "../components/menu/MenuButton.js";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -7,19 +7,19 @@ function MenuHeader() {
   return (
     <div className="menu-wrapper">
       <div className="menu-header">
-        {/* <MenuButton text={"home page"} link={"/home"} />
-        <MenuButton text={"zespół"} link={"/team"} />
-        <MenuButton text={"baza materiałów"} link={"/base"} />
-        <MenuButton text={"kontakt"} link={"/contact"} /> */}
         <NavLink className="menu-button" to={"/home"}>
-          <p>home page</p>
+          <p>O nas</p>
         </NavLink>
-        <NavLink className="menu-button" to={"/team"}>
-          <p>zespół</p>
+        <NavLink className="menu-button" to={"/tangoa"}>
+          <p>Tango A</p>
         </NavLink>
-        <NavLink className="menu-button" to={"/base"}>
-          <p>baza materiałów</p>
+        <NavLink className="menu-button" to={"/apparatus"}>
+          <p>Aparatura</p>
         </NavLink>
+        <NavLink className="menu-button" to={"/database"}>
+          <p>Baza danych</p>
+        </NavLink>
+
         <NavLink className="menu-button" to={"/contact"}>
           <p>Kontakt</p>
         </NavLink>

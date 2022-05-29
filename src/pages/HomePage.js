@@ -3,7 +3,7 @@
 function HomePage() {
   return (
     <div className="page">
-      <h1>STRONA GLOWNA</h1>
+      <h1>O nas</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet
         faucibus urna, eget suscipit leo. Nulla porta mattis neque, sed posuere

@@ -10,8 +10,9 @@ import "../style/layout.scss";
 import Footer from "./Footer.js";
 import MenuHeader from "./MenuHeader.js";
 import HomePage from "../pages/HomePage.js";
-import Team from "../pages/Team.js";
-import MaterialBase from "../pages/MaterialBase.js";
+import TangoA from "../pages/TangoA.js";
+import Apparatus from "../pages/Apparatus.js";
+import DataBase from "../pages/DataBase.js";
 import Contact from "../pages/Contact.js";
 import ErrorPage from "../pages/ErrorPage.js";
 
@@ -27,8 +28,9 @@ function Layout() {
             <Redirect to="/home" />
           </Route>
           <Route path="/home" component={HomePage}></Route>
-          <Route path="/team" component={Team}></Route>
-          <Route path="/base" component={MaterialBase}></Route>
+          <Route path="/tangoa" component={TangoA}></Route>
+          <Route path="/apparatus" component={Apparatus}></Route>
+          <Route path="/database" component={DataBase}></Route>
           <Route path="/contact" component={Contact}></Route>
           <Route component={ErrorPage} />
         </Switch>
