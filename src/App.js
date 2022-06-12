@@ -1,5 +1,5 @@
-import "./style/app.scss";
 import "./style/reset.scss";
+import "./style/variables.scss";
 import Layout from "./layout/Layout.js";
 
 function App() {

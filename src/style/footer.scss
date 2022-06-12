@@ -1,6 +1,7 @@
+@import "./variables.scss";
 .footer-wrapper {
   width: 100%;
-  background-color: #454c5a;
+  background-color: $background-color2;
 }
 
 .footer {
@@ -25,7 +26,7 @@
 
 .footer-link:hover {
   // opacity: 50%;
-  color: #61dafb;
+  color: $title-color;
 }
 
 .logo-footer {

@@ -1,0 +1,35 @@
+@import "../variables.scss";
+
+.home-page-theme {
+  line-height: 120%;
+  background-color: $background-color2;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.home-page-person-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  row-gap: 20px;
+  column-gap: 2%;
+  flex-wrap: wrap;
+}
+
+.home-page-person {
+  line-height: 120%;
+  background-color: $background-color2;
+  padding: 20px;
+  border-radius: 15px;
+  flex-basis: 50%;
+}
+
+.home-page-person-title {
+  //   background-color: red;
+}
+
+.home-page-person-text {
+  //   background-color: red;
+}
