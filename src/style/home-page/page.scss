@@ -6,6 +6,7 @@
   padding: 20px;
   border-radius: 15px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .home-page-person-container {
@@ -24,12 +25,15 @@
   padding: 20px;
   border-radius: 15px;
   flex-basis: 50%;
+  display: flex;
+  align-items: center;
 }
 
-.home-page-person-title {
-  //   background-color: red;
-}
+//.home-page-person-title { }
+//.home-page-person-text {  }
 
-.home-page-person-text {
-  //   background-color: red;
+.person-img {
+  height: 200px;
+  width: 150px;
+  margin-right: 5px;
 }

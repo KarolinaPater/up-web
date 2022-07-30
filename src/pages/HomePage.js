@@ -1,4 +1,8 @@
 import "../style/home-page/page.scss";
+import person1 from "../images/person1.png";
+import person2 from "../images/person2.png";
+import person3 from "../images/person3.png";
+import person4 from "../images/person4.png";
 
 function HomePage() {
   return (
@@ -26,58 +30,83 @@ function HomePage() {
       </div>
       <div className="home-page-person-container">
         <div className="home-page-person">
-          <h1 className="home-page-person-title">Mgr inż. Marta Lubszczyk</h1>
-          <p className="home-page-person-text">
-            Doktorantka inżynierii mat. na AGH w Krakowie. Realizuje badania nad
-            zmianą charakterystyki fizykochemicznej ceramicznych materiałów
-            ferroelektrycznych wywołanych domieszkowaniem i podstawianiem
-            pierwiastków ziem rzadkich.
-          </p>
+          <div className="person-img">
+            <img alt="person1" className="person-img" src={person1}></img>
+          </div>
+
+          <div>
+            <h1 className="home-page-person-title">Mgr inż. Marta Lubszczyk</h1>
+            <p className="home-page-person-text">
+              Doktorantka inżynierii mat. na AGH w Krakowie. Realizuje badania
+              nad zmianą charakterystyki fizykochemicznej ceramicznych
+              materiałów ferroelektrycznych wywołanych domieszkowaniem i
+              podstawianiem pierwiastków ziem rzadkich.
+            </p>
+          </div>
         </div>
         <div className="home-page-person">
-          <h1 className="home-page-person-title">Andrzej Kruk</h1>
-          <p className="home-page-person-text">
-            Kierownik projektów Sonata oraz Tango A. Prowadzi badania nad
-            ceramiką przeźroczystą z uwzględnieniem relacji pomiędzy
-            mikrostrukturą, a właściwościami magnetooptycznymi oraz
-            spektroskopowymi, w tym luminescencją.
-          </p>
+          <div className="person-img">
+            <img alt="person2" className="person-img" src={person2}></img>{" "}
+          </div>
+          <div>
+            <h1 className="home-page-person-title">Andrzej Kruk</h1>
+            <p className="home-page-person-text">
+              Kierownik projektów Sonata oraz Tango A. Prowadzi badania nad
+              ceramiką przeźroczystą z uwzględnieniem relacji pomiędzy
+              mikrostrukturą, a właściwościami magnetooptycznymi oraz
+              spektroskopowymi, w tym luminescencją.
+            </p>
+          </div>
         </div>
         <div className="home-page-person">
-          <h1 className="home-page-person-title">Dr Mariusz Mrózek</h1>
-          <p className="home-page-person-text">
-            Realizuje badania nad zmianą charakterystyki fizykochemicznej
-            ceramicznych materiałów ferroelektrycznych wywołanych
-            domieszkowaniem i podstawianiem pierwiastków ziem rzadkich.
-          </p>
+          <div className="person-img">
+            <img alt="person3" className="person-img" src={person3}></img>{" "}
+          </div>
+          <div>
+            <h1 className="home-page-person-title">Dr Mariusz Mrózek</h1>
+            <p className="home-page-person-text">
+              Realizuje badania nad zmianą charakterystyki fizykochemicznej
+              ceramicznych materiałów ferroelektrycznych wywołanych
+              domieszkowaniem i podstawianiem pierwiastków ziem rzadkich.
+            </p>
+          </div>
         </div>
         <div className="home-page-person">
-          <h1 className="home-page-person-title">
-            Dr hab. inż. Dominika Madej
-          </h1>
-          <p className="home-page-person-text">
-            Profesor na Wydziale WIMiC AGH w Krakowie. Zajmuje się głównie
-            materiałami ogniotrwałymi, oraz oddziaływaniem bardzo wysokich
-            temperatur i reaktywnych środowisk na ceramiką tlenkową.
-          </p>
+          <div className="person-img">
+            <img alt="person4" className="person-img" src={person4}></img>{" "}
+          </div>
+          <div>
+            <h1 className="home-page-person-title">
+              Dr hab. inż. Dominika Madej
+            </h1>
+            <p className="home-page-person-text">
+              Profesor na Wydziale WIMiC AGH w Krakowie. Zajmuje się głównie
+              materiałami ogniotrwałymi, oraz oddziaływaniem bardzo wysokich
+              temperatur i reaktywnych środowisk na ceramiką tlenkową.
+            </p>
+          </div>
         </div>
         <div className="home-page-person">
-          <h1 className="home-page-person-title">Dyplomanci</h1>
-          <p className="home-page-person-text">
-            Oferujemy najlepszym studentom możliwość realizacji prac
-            inżynierskich i magisterskich spośród wielu tematów wpisujących się
-            w obszar fizyki i inżynierii materiałowej oraz informatyki. Prace
-            mają charakter teoretyczny i doświadczalny.
-          </p>
+          <div>
+            <h1 className="home-page-person-title">Dyplomanci</h1>
+            <p className="home-page-person-text">
+              Oferujemy najlepszym studentom możliwość realizacji prac
+              inżynierskich i magisterskich spośród wielu tematów wpisujących
+              się w obszar fizyki i inżynierii materiałowej oraz informatyki.
+              Prace mają charakter teoretyczny i doświadczalny.
+            </p>
+          </div>
         </div>
         <div className="home-page-person">
-          <h1 className="home-page-person-title">Koła naukowe</h1>
-          <p className="home-page-person-text">
-            Umożliwiamy młodym badaczom realizacje szeregu ważnych i ciekawych
-            zadań badawczych. Wspomagamy ich naszym doświadczeniem oraz
-            zapleczem technicznym i aparaturowym. Zachęcamy do współpracy grupy
-            interdyscyplinarne.
-          </p>
+          <div>
+            <h1 className="home-page-person-title">Koła naukowe</h1>
+            <p className="home-page-person-text">
+              Umożliwiamy młodym badaczom realizacje szeregu ważnych i ciekawych
+              zadań badawczych. Wspomagamy ich naszym doświadczeniem oraz
+              zapleczem technicznym i aparaturowym. Zachęcamy do współpracy
+              grupy interdyscyplinarne.
+            </p>
+          </div>
         </div>
       </div>
       <div className="home-page-theme">
