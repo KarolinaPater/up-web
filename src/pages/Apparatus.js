@@ -3,67 +3,57 @@ function Apparatus() {
     <div className="page">
       <h1>Aparatura</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet
-        faucibus urna, eget suscipit leo. Nulla porta mattis neque, sed posuere
-        nibh iaculis tristique. Sed rhoncus ante eget libero ornare sodales vel
-        sit amet leo. Maecenas sed dapibus mi. Orci varius natoque penatibus et
-        magnis dis parturient montes, nascetur ridiculus mus. Quisque finibus
-        nunc eget arcu efficitur, id iaculis est euismod. Proin ut ullamcorper
-        velit. Sed felis enim, maximus ac euismod in, accumsan sagittis arcu.
-        Donec tempor egestas laoreet. Curabitur blandit turpis bibendum purus
-        maximus dignissim. In eget pharetra orci. Cras nisi tortor, ornare vel
-        fringilla sit amet, mollis in nunc. Fusce iaculis libero quis massa
-        mollis porttitor. Nullam sollicitudin ut augue quis facilisis. Duis quam
-        tellus, blandit sed porttitor sit amet, maximus quis neque. Fusce ac
-        iaculis lectus. Maecenas at cursus metus. Proin eu tempor libero.
-        Curabitur vitae hendrerit lorem. Etiam sed neque egestas, ullamcorper
-        sapien non, porttitor odio. Nunc lobortis condimentum est a mollis.
-        Aenean in laoreet metus. Morbi ac maximus lacus. Vivamus ut metus elit.
-        Quisque dapibus massa ex, iaculis viverra nulla egestas a. Cras sit amet
-        turpis sed libero tincidunt consectetur. Mauris laoreet viverra
-        convallis. Nunc a porttitor dui, sit amet faucibus nisl.
+        Laboratorium posiada nowoczesną aparaturę badawczą o wysokiej czułości i
+        szerokim spektrum pomiarowym. Aparatura naukowa wchodząca w skład
+        laboratorium umożliwia przeprowadzenie badań strukturalnych, optycznych
+        i fotoelektrycznych. Do najważniejszych urządzeń należy spektrometr
+        FT-IR firmy Shimadzu działający w zakresie 400 - 4000 cm-1 , przy
+        współczynniku sygnału do szumu S/N 60 000:1, i rozdzielczości 0.25 cm-1,
+        i prędkości skanowania do 20 widm na sekundę. Został on wyposażony w
+        detektory rozszerzające zakres pomiarowy o FIR i NIR czyli od 240 do
+        12400 cm-1. Dodatkowo przystawka odbiciowa ATR firmy PIKE umożliwia
+        pomiar materiałów litych , proszków i cieczy. Dzięki tym badaniom można
+        zidentyfikować strukturę cząsteczkową materiałów, mechanizmy i przemiany
+        fazowe , ich kinetyki i kierunek zachodzenia reakcji chemicznych ,a
+        nawet opisać cykle katalityczne. Służ także do badania
+        transmisji/absorbcji światła podczerwonego w materiałach. Spektroskopia
+        FT-IR jest wykorzystywana do zapewnienia zgodności surowców, związków
+        pośrednich i produktów końcowych z wymaganiami specyfikacji.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet
-        faucibus urna, eget suscipit leo. Nulla porta mattis neque, sed posuere
-        nibh iaculis tristique. Sed rhoncus ante eget libero ornare sodales vel
-        sit amet leo. Maecenas sed dapibus mi. Orci varius natoque penatibus et
-        magnis dis parturient montes, nascetur ridiculus mus. Quisque finibus
-        nunc eget arcu efficitur, id iaculis est euismod. Proin ut ullamcorper
-        velit. Sed felis enim, maximus ac euismod in, accumsan sagittis arcu.
-        Donec tempor egestas laoreet. Curabitur blandit turpis bibendum purus
-        maximus dignissim. In eget pharetra orci. Cras nisi tortor, ornare vel
-        fringilla sit amet, mollis in nunc. Fusce iaculis libero quis massa
-        mollis porttitor. Nullam sollicitudin ut augue quis facilisis. Duis quam
-        tellus, blandit sed porttitor sit amet, maximus quis neque. Fusce ac
-        iaculis lectus. Maecenas at cursus metus. Proin eu tempor libero.
-        Curabitur vitae hendrerit lorem. Etiam sed neque egestas, ullamcorper
-        sapien non, porttitor odio. Nunc lobortis condimentum est a mollis.
-        Aenean in laoreet metus. Morbi ac maximus lacus. Vivamus ut metus elit.
-        Quisque dapibus massa ex, iaculis viverra nulla egestas a. Cras sit amet
-        turpis sed libero tincidunt consectetur. Mauris laoreet viverra
-        convallis. Nunc a porttitor dui, sit amet faucibus nisl.
+        Kolejnym urządzeniem jest spektrofotometr fotoelektryczny firmy Instytut
+        Fotonowy pozwalający testować przewodnictwo prądu elektrycznego
+        materiałów optycznie aktywnych w funkcji przyłożonego napięcia i
+        długości padającej fali. Materiał można oświetlać światłem białym lub
+        wybraną długością fali od 200 do 1100 nm z krokiem 1 nm. Urządzenie
+        służy do testowania materiałów optycznie czynnych fotodiod, paneli
+        słonecznych, ale pozwala, także mierzyć niskie napięcia i prądy poniżej
+        nanoamper.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet
-        faucibus urna, eget suscipit leo. Nulla porta mattis neque, sed posuere
-        nibh iaculis tristique. Sed rhoncus ante eget libero ornare sodales vel
-        sit amet leo. Maecenas sed dapibus mi. Orci varius natoque penatibus et
-        magnis dis parturient montes, nascetur ridiculus mus. Quisque finibus
-        nunc eget arcu efficitur, id iaculis est euismod. Proin ut ullamcorper
-        velit. Sed felis enim, maximus ac euismod in, accumsan sagittis arcu.
-        Donec tempor egestas laoreet. Curabitur blandit turpis bibendum purus
-        maximus dignissim. In eget pharetra orci. Cras nisi tortor, ornare vel
-        fringilla sit amet, mollis in nunc. Fusce iaculis libero quis massa
-        mollis porttitor. Nullam sollicitudin ut augue quis facilisis. Duis quam
-        tellus, blandit sed porttitor sit amet, maximus quis neque. Fusce ac
-        iaculis lectus. Maecenas at cursus metus. Proin eu tempor libero.
-        Curabitur vitae hendrerit lorem. Etiam sed neque egestas, ullamcorper
-        sapien non, porttitor odio. Nunc lobortis condimentum est a mollis.
-        Aenean in laoreet metus. Morbi ac maximus lacus. Vivamus ut metus elit.
-        Quisque dapibus massa ex, iaculis viverra nulla egestas a. Cras sit amet
-        turpis sed libero tincidunt consectetur. Mauris laoreet viverra
-        convallis. Nunc a porttitor dui, sit amet faucibus nisl.
+        Do analizy rozkładu wielkości ziaren wykorzystywany jest przyrząd
+        Shimadzu SALD-7500nano wykorzystujący technikę DLS ( dynamicznie
+        rozpraszanie światła). Urządzenie wykorzystuje laser o długości fali 405
+        nm , zatem umożliwia badanie cząstek od 0.007nm do kilku mikrometrów.
+        Wyposażony jest w przystawkę do badania małych ilości proszku, dzięki
+        czemu ogranicza ilość potrzebnego materiału do kilku miligramów.
+      </p>
+      <p>
+        W laboratorium znajdują się spektrometr SilverNova StellarNet pracujący
+        w zakresie od 190-1110 nm z rozdzielczością 0.5 nm oraz NIRQUEST+2.5
+        OceanInsight umożliwiający pomiary w zakresie od 900 do 2500 nm. Dzięki
+        tym urządzeniom, możliwe jest wykonanie wielu cennych pomiarów w tym
+        transparencji, absorbcji, barwy, starzenia materiału, zjawisk
+        fotochromowych, luminescencji, wyznaczania przerwy energetycznej i
+        innych. Urządzenia sprzęgnięte są szerokopasmowymi światłowodami ze
+        sferą całkującą IC2 firmy StellarNet.{" "}
+      </p>
+      <p>
+        Analizy spektroskopowe są często wykorzystywane w laboratoriach
+        przemysłowych i naukowych do badania kontroli materiałów, półproduktów i
+        produktów, stwierdzenia ich zgodności z Normami, do certyfikowania oraz
+        zweryfikowania procesów technologicznych. Posiadamy możliwość badania
+        zjawisk fotoelektrycznych i innych.
       </p>
     </div>
   );
