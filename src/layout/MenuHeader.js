@@ -23,6 +23,9 @@ function MenuHeader() {
         <NavLink className="menu-button" to={"/contact"}>
           <p>Kontakt</p>
         </NavLink>
+        <NavLink className="menu-button" to={"/logon"}>
+          <p>Zaloguj się</p>
+        </NavLink>
       </div>
     </div>
   );

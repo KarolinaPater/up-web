@@ -15,6 +15,7 @@ import Apparatus from "../pages/Apparatus.js";
 import DataBase from "../pages/DataBase.js";
 import Contact from "../pages/Contact.js";
 import ErrorPage from "../pages/ErrorPage.js";
+import LogOn from "../pages/LogOn.js";
 
 // import { render } from "react-dom";
 
@@ -32,6 +33,7 @@ function Layout() {
           <Route path="/apparatus" component={Apparatus}></Route>
           <Route path="/database" component={DataBase}></Route>
           <Route path="/contact" component={Contact}></Route>
+          <Route path="/logon" component={LogOn}></Route>
           <Route component={ErrorPage} />
         </Switch>
       </Router>
