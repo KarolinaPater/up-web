@@ -3,8 +3,10 @@ import { useState, useContext } from "react";
 import { validEmail, validPassword } from "../../validator/validator.js";
 import axios from "axios";
 import { AppContext } from "../../AppContext";
+import { useHistory } from "react-router-dom";
 
 function LoginForm() {
+  let history = useHistory();
   const { setUserInfo, setUserRole, setUserId, setIsUserLogged } =
     useContext(AppContext);
 
@@ -41,6 +43,7 @@ function LoginForm() {
         console.log("udało sie", response.data);
         setUserInfo(response.data.user);
         setIsUserLogged(true);
+        history.push("/account");
         alert(response.data.message);
       })
       .catch((error) => {
