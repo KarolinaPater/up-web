@@ -24,7 +24,7 @@ import MyArticle from "../pages/MyArticle.js";
 function Layout() {
   return (
     <div className="layout">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <AppProvider>
           <MenuHeader />
           <Switch>
