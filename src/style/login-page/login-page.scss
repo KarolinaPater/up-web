@@ -24,7 +24,9 @@
 }
 .text-input-wrapper {
   //background-color: red;
-  padding-block: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -59,4 +61,13 @@
 
 .change-form-button:hover {
   color: $title-color;
+}
+
+.text-input-error {
+  color: red;
+  padding: 5px;
+  font-size: 12px;
+  position: absolute;
+  left: 1px;
+  bottom: 0px;
 }

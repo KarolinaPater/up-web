@@ -37,3 +37,15 @@
   width: 150px;
   margin-right: 5px;
 }
+
+.red {
+  color: red;
+}
+
+.devices-list {
+  ol {
+    li {
+      list-style-type: decimal;
+    }
+  }
+}
