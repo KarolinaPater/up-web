@@ -49,7 +49,7 @@ function HomePage() {
             <img alt="person2" className="person-img" src={person2}></img>{" "}
           </div>
           <div>
-            <h1 className="home-page-person-title">Andrzej Kruk</h1>
+            <h1 className="home-page-person-title">Dr hab. Andrzej Kruk</h1>
             <p className="home-page-person-text">
               Kierownik projektów Sonata oraz Tango A. Prowadzi badania nad
               ceramiką przeźroczystą z uwzględnieniem relacji pomiędzy
