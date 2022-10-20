@@ -44,8 +44,14 @@
 
 .devices-list {
   ol {
+    padding-left: 20px;
+
     li {
       list-style-type: decimal;
+      padding-left: 5px;
+      // line-height: 130%;
+
+      margin-bottom: 5px;
     }
   }
 }
