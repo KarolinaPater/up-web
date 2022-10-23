@@ -7,8 +7,8 @@ import { useHistory } from "react-router-dom";
 
 function LoginForm() {
   let history = useHistory();
-  const { setUserInfo, setUserRole, setUserId, setIsUserLogged } =
-    useContext(AppContext);
+  const { setUserInfo, setIsUserLogged } = useContext(AppContext);
+  const [isDisabledButton, setIsDisabledButton] = useState(false);
 
   const [user, setUser] = useState({
     email: "",
@@ -36,7 +36,7 @@ function LoginForm() {
       console.log("bład hasła", password_error);
       return;
     }
-
+    setIsDisabledButton(true);
     axios
       .post(`${process.env.REACT_APP_API_URL}/login`, user)
       .then((response) => {
@@ -45,10 +45,13 @@ function LoginForm() {
         setIsUserLogged(true);
         history.push("/account");
         alert(response.data.message);
+        window.localStorage.setItem("token", response.data.accessToken);
+        setIsDisabledButton(false);
       })
       .catch((error) => {
         alert(error.response.data.message || "Błąd serwera");
         console.log("nie udalo sie", error.response.data);
+        setIsDisabledButton(true);
       });
   };
 
@@ -86,7 +89,11 @@ function LoginForm() {
           {error.password ? error.password : null}
         </div>
       </div>
-      <button onClick={handleForm} className="form-button">
+      <button
+        onClick={handleForm}
+        className="form-button"
+        disabled={isDisabledButton}
+      >
         Zaloguj się
       </button>
     </div>

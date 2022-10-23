@@ -1,0 +1,14 @@
+@import "./variables.scss";
+.form-button2 {
+  background-color: $background-color;
+  color: $text-color;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form-button2:hover {
+  color: $title-color;
+}

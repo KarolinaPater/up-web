@@ -50,8 +50,13 @@
   height: 35px;
   border-radius: 10px;
 }
+
 .form-button:hover {
   color: $title-color;
+}
+.form-button:disabled {
+  color: $background-color2;
+  cursor: not-allowed;
 }
 .change-form-button {
   color: $text-color;
