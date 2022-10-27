@@ -43,15 +43,18 @@ function LoginForm() {
         console.log("udało sie", response.data);
         setUserInfo(response.data.user);
         setIsUserLogged(true);
-        history.push("/account");
         alert(response.data.message);
         window.localStorage.setItem("token", response.data.accessToken);
         setIsDisabledButton(false);
+        history.push("/account");
       })
       .catch((error) => {
         alert(error.response.data.message || "Błąd serwera");
-        console.log("nie udalo sie", error.response.data);
-        setIsDisabledButton(true);
+        console.log(
+          "nie udalo sie",
+          error?.response?.data?.message || "Błąd serwera"
+        );
+        setIsDisabledButton(false);
       });
   };
 
