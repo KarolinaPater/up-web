@@ -7,8 +7,11 @@ import {
   validConfirmPassword,
 } from "../../validator/validator";
 import axios from "axios";
+import FormButton from "../global/FormButton";
 
 function RegisterForm() {
+  const [isDisabledButton, setIsDisabledButton] = useState(false);
+
   const [user, setUser] = useState({
     name: "",
     last_name: "",
@@ -32,7 +35,7 @@ function RegisterForm() {
   };
 
   const handleForm = () => {
-    
+    //zerujemy błędy za pomocą setError
     setError({
       name: null,
       last_name: null,
@@ -40,6 +43,8 @@ function RegisterForm() {
       password: null,
       confirm_password: null,
     });
+
+    //walidacja
     const name_error = validName(user.name);
     const last_name_error = validName(user.last_name);
     const email_error = validEmail(user.email);
@@ -48,6 +53,8 @@ function RegisterForm() {
       user.password,
       user.confirm_password
     );
+
+    //wyświetlamy błędy walidacji
     setError({
       name: name_error,
       last_name: last_name_error,
@@ -55,6 +62,8 @@ function RegisterForm() {
       password: password_error,
       confirm_password: confirm_password_error,
     });
+
+    //if wystąpił jakikolwiek error to wyjdź z funckji
     if (
       name_error ||
       last_name_error ||
@@ -62,24 +71,25 @@ function RegisterForm() {
       password_error ||
       confirm_password_error
     ) {
-      console.log("błąd name", name_error);
-      console.log("bład lastname", last_name_error);
-      console.log("błąd emaila", email_error);
-      console.log("bład haselo", password_error);
-      console.log("blad konf pasword", confirm_password_error);
       return;
     }
+    //if brak błędu, ustaw disabledbutton na true
+    setIsDisabledButton(true);
+    //wysyłamy dane do backendu
     axios
       .post(`${process.env.REACT_APP_API_URL}/register`, user)
       .then((response) => {
-        // setPost(response.data);
-        console.log("udalo sie?", response.data);
+        //if rejestracja się powiodła then, stan przycisku na false
+        console.log("udalo sie", response.data);
+
         alert(response.data.message);
+        setIsDisabledButton(false);
       })
       .catch((error) => {
+        // if rejestracja się nie powiodła lub wyskoczył błąd wtedy wyświetl i ustaw button na false
         alert(error.response.data.message || "Błąd serwera");
         console.log("nieudalo sie", error.response.data);
-        // setError(error);
+        setIsDisabledButton(false);
       });
   };
 
@@ -155,9 +165,15 @@ function RegisterForm() {
           {error.confirm_password ? error.confirm_password : null}
         </div>
       </div>
-      <button onClick={handleForm} className="form-button">
+      {/* <button onClick={handleForm} className="form-button">
         Zarestruj się
-      </button>
+      </button> */}
+
+      <FormButton
+        title="Zarejestruj się"
+        handleForm={handleForm}
+        disabled={isDisabledButton}
+      />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { validEmail, validPassword } from "../../validator/validator.js";
 import axios from "axios";
 import { AppContext } from "../../AppContext";
 import { useHistory } from "react-router-dom";
+import FormButton from "../global/FormButton";
 
 function LoginForm() {
   let history = useHistory();
@@ -92,13 +93,18 @@ function LoginForm() {
           {error.password ? error.password : null}
         </div>
       </div>
-      <button
+      {/* <button
         onClick={handleForm}
         className="form-button"
         disabled={isDisabledButton}
       >
         Zaloguj się
-      </button>
+      </button> */}
+      <FormButton
+        title="Zaloguj się"
+        handleForm={handleForm}
+        disabled={isDisabledButton}
+      />
     </div>
   );
 }
