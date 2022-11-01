@@ -8,6 +8,7 @@ import {
 } from "../../validator/validator";
 import axios from "axios";
 import FormButton from "../global/FormButton";
+import FormTextInput from "../global/FormTextInput";
 
 function RegisterForm() {
   const [isDisabledButton, setIsDisabledButton] = useState(false);
@@ -98,76 +99,52 @@ function RegisterForm() {
       <div className="form-title">
         <h1>Formularz rejestracji</h1>
       </div>
-      <div className="text-input-wrapper">
-        <label className="text-input-label"> Imię</label>
-        <input
-          className="text-input-input"
-          type="text"
-          name="name"
-          placeholder="Jan"
-          onChange={handleInput}
-        ></input>
-        <div className="text-input-error">{error.name ? error.name : null}</div>
-      </div>
 
-      <div className="text-input-wrapper">
-        <label className="text-input-label"> Nazwisko </label>
-        <input
-          className="text-input-input"
-          type="text"
-          name="last_name"
-          placeholder="Kowalski"
-          onChange={handleInput}
-        ></input>
-        <div className="text-input-error">
-          {error.last_name ? error.last_name : null}
-        </div>
-      </div>
-
-      <div className="text-input-wrapper">
-        <label className="text-input-label"> Adres email </label>
-        <input
-          className="text-input-input"
-          type="email"
-          name="email"
-          placeholder="jankowalski@edu.pl"
-          onChange={handleInput}
-        ></input>
-        <div className="text-input-error">
-          {error.email ? error.email : null}
-        </div>
-      </div>
-
-      <div className="text-input-wrapper">
-        <label className="text-input-label"> Podaj hasło </label>
-        <input
-          className="text-input-input"
-          type="password"
-          name="password"
-          placeholder="*******"
-          onChange={handleInput}
-        ></input>
-        <div className="text-input-error">
-          {error.password ? error.password : null}
-        </div>
-      </div>
-
-      <div className="text-input-wrapper">
-        <label className="text-input-label"> Powtórz hasło </label>
-        <input
-          className="text-input-input"
-          type="password"
-          name="confirm_password"
-          placeholder="*******"
-          onChange={handleInput}
-        ></input>
-        <div className="text-input-error">
-          {error.confirm_password ? error.confirm_password : null}
-        </div>
-      </div>
-      {/* <button onClick={handleForm} className="form-button">
-        Zarestruj się
-      </button> */}
+      <FormTextInput
+        title="Imię"
+        type="text"
+        name="name"
+        placeholder="Jan"
+        value={user.name}
+        onChange={handleInput}
+        error={error.name}
+      />
+      <FormTextInput
+        title="Nazwisko"
+        type="text"
+        name="last_name"
+        placeholder="Kowalski"
+        value={user.last_name}
+        onChange={handleInput}
+        error={error.last_name}
+      />
+      <FormTextInput
+        title="Adres email"
+        type="email"
+        name="email"
+        placeholder="jankowalski@edu.pl"
+        value={user.email}
+        onChange={handleInput}
+        error={error.email}
+      />
+      <FormTextInput
+        title="Hasło"
+        type="password"
+        name="password"
+        placeholder="*******"
+        value={user.password}
+        onChange={handleInput}
+        error={error.password}
+      />
+      <FormTextInput
+        title="Powtórz hasło"
+        type="password"
+        name="confirm_password"
+        placeholder="*******"
+        value={user.password}
+        onChange={handleInput}
+        error={error.confirm_password}
+      />
 
       <FormButton
         title="Zarejestruj się"

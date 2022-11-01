@@ -19,6 +19,7 @@ import Contact from "../pages/Contact.js";
 import ErrorPage from "../pages/ErrorPage.js";
 import LogOn from "../pages/LogOn.js";
 import Account from "../pages/Account.js";
+import AddArticle from "../pages/AddArticle";
 import MyArticle from "../pages/MyArticle.js";
 
 function Layout() {
@@ -67,7 +68,8 @@ function Layout() {
           <Route path="/contact" component={Contact}></Route>
           <Route path="/logon" component={LogOn}></Route>
           <Route path="/account" component={Account}></Route>
-          <Route component={MyArticle}></Route>
+          <Route path="/add-article" component={AddArticle}></Route>
+          <Route path="/my-article" component={MyArticle}></Route>
           <Route component={ErrorPage} />
         </Switch>
       </Router>

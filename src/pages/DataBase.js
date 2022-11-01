@@ -1,7 +1,7 @@
 function DataBase() {
   return (
     <div className="page">
-      <h1> Baza danych</h1>
+      <h1> Baza artykułów</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet
         faucibus urna, eget suscipit leo. Nulla porta mattis neque, sed posuere

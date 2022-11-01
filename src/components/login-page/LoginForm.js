@@ -5,6 +5,7 @@ import axios from "axios";
 import { AppContext } from "../../AppContext";
 import { useHistory } from "react-router-dom";
 import FormButton from "../global/FormButton";
+import FormTextInput from "../global/FormTextInput";
 
 function LoginForm() {
   let history = useHistory();
@@ -64,42 +65,26 @@ function LoginForm() {
       <div className="form-title">
         <h1>Formularz logowania</h1>
       </div>
-      <div className="text-input-wrapper">
-        <label className="text-input-label"> Nazwa użytkownika </label>
-        <input
-          className="text-input-input"
-          type="email"
-          name="email"
-          placeholder="nazwa@edu.pl"
-          value={user.email}
-          onChange={handleInput}
-        ></input>
-        <div className="text-input-error">
-          {error.email ? error.email : null}
-        </div>
-      </div>
 
-      <div className="text-input-wrapper">
-        <label className="text-input-label"> Hasło </label>
-        <input
-          className="text-input-input"
-          type="password"
-          name="password"
-          placeholder="*******"
-          value={user.password}
-          onChange={handleInput}
-        ></input>
-        <div className="text-input-error">
-          {error.password ? error.password : null}
-        </div>
-      </div>
-      {/* <button
-        onClick={handleForm}
-        className="form-button"
-        disabled={isDisabledButton}
-      >
-        Zaloguj się
-      </button> */}
+      <FormTextInput
+        title="Nazwa użytkownika"
+        type="email"
+        name="email"
+        placeholder="nazwa@edu.pl"
+        value={user.email}
+        onChange={handleInput}
+        error={error.email}
+      />
+      <FormTextInput
+        title="Hasło"
+        className="text-input-input"
+        type="password"
+        name="password"
+        placeholder="*******"
+        value={user.password}
+        onChange={handleInput}
+        error={error.password}
+      />
       <FormButton
         title="Zaloguj się"
         handleForm={handleForm}

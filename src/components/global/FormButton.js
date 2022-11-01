@@ -1,4 +1,3 @@
-import { isDisabled } from "@testing-library/user-event/dist/utils";
 import "../../style/global/form-button.scss";
 
 function FormButton(props) {
@@ -14,10 +13,3 @@ function FormButton(props) {
 }
 
 export default FormButton;
-//  <button
-//    onClick={handleForm}
-//    className="form-button"
-//    disabled={isDisabledButton}
-//  >
-//    Zaloguj się
-//  </button>;

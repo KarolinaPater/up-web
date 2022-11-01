@@ -49,12 +49,18 @@ function Account() {
             Nazwisko: <strong>{userInfo.last_name}</strong>
           </div>
         </div>
-        <NavLink className="navlink" to={"/my-article"}>
-          <p>Moje artykuły</p>
-        </NavLink>
-        <button className="form-button2" onClick={handleLogOut}>
-          Wyloguj
-        </button>
+
+        <div className="button-wrapper">
+          <NavLink className="form-button2" to={"/add-article"}>
+            Dodaj artykuł
+          </NavLink>
+          <NavLink className="form-button2" to={"/my-article"}>
+            Moje artykuły
+          </NavLink>
+          <button className="form-button2" onClick={handleLogOut}>
+            Wyloguj
+          </button>
+        </div>
       </div>
     </div>
   );

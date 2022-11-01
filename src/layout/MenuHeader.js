@@ -21,7 +21,7 @@ function MenuHeader() {
           <p>Aparatura</p>
         </NavLink>
         <NavLink className="menu-button" to={"/database"}>
-          <p>Baza danych</p>
+          <p>Baza artykułów</p>
         </NavLink>
 
         <NavLink className="menu-button" to={"/contact"}>
