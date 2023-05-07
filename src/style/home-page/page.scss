@@ -1,0 +1,52 @@
+@import "../variables.scss";
+
+.home-page-theme {
+  line-height: 120%;
+  background-color: $background-color2;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.home-page-person-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  row-gap: 20px;
+  column-gap: 2%;
+  flex-wrap: wrap;
+}
+
+.home-page-person {
+  line-height: 120%;
+  background-color: $background-color2;
+  padding: 20px;
+  border-radius: 15px;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.person-img {
+  height: 200px;
+  width: 150px;
+  margin-right: 5px;
+}
+
+.red {
+  color: red;
+}
+
+.devices-list {
+  ol {
+    padding-left: 20px;
+
+    li {
+      list-style-type: decimal;
+      padding-left: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
